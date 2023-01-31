@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="logo">
+        </a>
+        <nav class="menu">
+          <button class="menu__btn">
+            <span></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="index.html">Home +</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="about.html">About</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="terms.html">Services</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="product-one.html">Pages +</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="blog.html">News</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="contacts.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <a class="user-nav__link user-nav__search" href="#">
+            <img class="user-nav__img" src="images/icons/search.png" alt="user icon">
+          </a>
+          <a class="user-nav__link user-nav__btn" href="#">
+            <img class="user-nav__img" src="images/icons/heart.png" alt="user icon">
+            <span class="user-nav__num">0</span>
+          </a>
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__img" src="images/icons/cart.png" alt="user icon">
+            <span class="user-nav__num">0</span>
+          </a>
+          <a class="user-nav__link user-nav__menu" href="#">
+            <img class="user-nav__img user-nav__img-menu" src="images/icons/menu.png" alt="user icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="top">
+      <div class="top__inner">
+        <h2 class="top__inner-title">Product list 1</h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Product list 1
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="product-one">
+      <div class="container-box">
+        <div class="product-one__inner">
+          <button class="product-one__filter-btn"></button>
+          <div class="product-one__filters">
+            <div class="filter-category filter__item">
+              <h2 class="filter__title">CATEGORY</h2>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox" checked>
+                  <div class="filter-category__checkbox filter-list">
+                    <span class="filter-category__name">Chair</span>
+                    <img class="filter-category__image" src="images/icons/check-on.png" alt="check-on icon">
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__name">Table</span>
+                    <img class="filter-category__image" src="images/icons/check-on.png" alt="check-on icon">
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__name">Lamp</span>
+                    <img class="filter-category__image" src="images/icons/check-on.png" alt="check-on icon">
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__name">Watch</span>
+                    <img class="filter-category__image" src="images/icons/check-on.png" alt="check-on icon">
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__name">Clock</span>
+                    <img class="filter-category__image" src="images/icons/check-on.png" alt="check-on icon">
+                  </div>
+                </label>
+              </form>
+            </div>
+
+
+            <div class="filter__item filter-price">
+              <h3 class="filter__title">PRICE</h3>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-min="0" data-max="1000" data-from="100"
+                  data-to="500">
+                <label class="filter-price__label">
+                  <span class="filter-price__box">
+                    $<span class="filter-price__from"></span>
+                  </span>
+                  <span class="filter-price__box">
+                    $<span class="filter-price__to"></span>
+                  </span>
+                </label>
+              </form>
+            </div>
+
+
+            <div class="filter-brand filter-category">
+              <h2 class="filter__title">BRAND</h2>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox" checked>
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__name">RFL</span>
+                    <span>(10)</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input filter-btn" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__name">Brothers</span>
+                    <span>(21)</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input filter-btn" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__name">Regal</span>
+                    <span>(3)</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__name">Nadia</span>
+                    <span>(14)</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__name">Otobi</span>
+                    <span>(6)</span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="recent-products">
+              <h2 class="filter__title">RECENT PRODUCTS</h2>
+              <div class="recent-products__inner">
+                <div class="recent-products__content">
+                  <div class="recent-products__image">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55px"
+                      height="61px">
+                      <image x="0px" y="0px" width="55px" height="61px"
+                        xlink:href="data:img/png;base64,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" />
+                    </svg>
+                  </div>
+                  <div class="recent_products__box">
+                    <h4 class="recent-products__title">Pendant lamp</h4>
+                    <div class="star" data-rateyo-rating="4">
+                    </div>
+                    <span class="recent-products__price">23$</span>
+                  </div>
+                </div>
+                <div class="recent-products__content">
+                  <div class="recent-products__image">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37px"
+                      height="63px">
+                      <image x="0px" y="0px" width="37px" height="63px"
+                        xlink:href="data:img/png;base64,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" />
+                    </svg>
+                  </div>
+                  <div class="recent_products__box">
+                    <h4 class="recent-products__title">Pendant lamp</h4>
+                    <div class="star" data-rateyo-rating="4"></div>
+                    <span class="recent-products__price">23$</span>
+                  </div>
+                </div>
+                <div class="recent-products__content">
+                  <div class="recent-products__image">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29px"
+                      height="65px">
+                      <image x="0px" y="0px" width="29px" height="65px"
+                        xlink:href="data:img/png;base64,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" />
+                    </svg>
+                  </div>
+                  <div class="recent_products__box">
+                    <h4 class="recent-products__title">Pendant lamp</h4>
+                    <div class="star" data-rateyo-rating="4"></div>
+                    <span class="recent-products__price">23$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-content">
+            <div class="product-content__inner">
+              <div class="products-item mix category-a">
+                <div class="products-item__img-box">
+                  <img class="products-item__images" src="images/products/product-1.png" alt="wooden chair">
+                  <div class="products-item__link-box">
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--cart" href="#">
+                      <svg width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="products-item__title">Wooden radio</h4>
+                <span class="products-item__price">$29.00</span>
+              </div>
+              <div class="products-item mix category-c">
+                <div class="products-item__img-box">
+                  <img class="products-item__images" src="images/products/product-2.png" alt="wooden chair">
+                  <div class="products-item__link-box">
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--cart" href="#">
+                      <svg width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="products-item__title">Wooden radio</h4>
+                <span class="products-item__price">$29.00</span>
+              </div>
+              <div class="products-item mix category-b">
+                <div class="products-item__img-box">
+                  <img class="products-item__images" src="images/products/product-3.png" alt="white chair">
+                  <div class="products-item__link-box">
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--cart" href="#">
+                      <svg width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="products-item__title">White chair</h4>
+                <span class="products-item__price">$29.00</span>
+              </div>
+              <div class="products-item mix category-c">
+                <div class="products-item__img-box">
+                  <img class="products-item__images" src="images/products/product-4.png" alt="retro table">
+                  <div class="products-item__link-box">
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--cart" href="#">
+                      <svg width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="products-item__title">Retro table</h4>
+                <span class="products-item__price">$29.00</span>
+              </div>
+              <div class="products-item mix category-d">
+                <div class="products-item__img-box">
+                  <img class="products-item__images product-image__content" src="images/products/product-5.png"
+                    alt="wooden radio">
+                  <div class="products-item__link-box">
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--cart" href="#">
+                      <svg width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="products-item__title">Wooden radio</h4>
+                <span class="products-item__price">$29.00</span>
+              </div>
+              <div class="products-item mix category-c">
+                <div class="products-item__img-box">
+                  <img class="products-item__images products-item__image-one" src="images/products/product-4.png"
+                    alt="retro table">
+                  <div class="products-item__link-box">
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--cart" href="#">
+                      <svg width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="products-item__title">Retro table</h4>
+                <span class="products-item__price">$29.00</span>
+              </div>
+              <div class="products-item mix category-d">
+                <div class="products-item__img-box">
+                  <img class="products-item__images product-image__content" src="images/products/product-6.png"
+                    alt="wooden radio">
+                  <div class="products-item__link-box">
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--cart" href="#">
+                      <svg width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="products-item__title">Wooden radio</h4>
+                <span class="products-item__price">$29.00</span>
+              </div>
+              <div class="products-item mix category-d">
+                <div class="products-item__img-box">
+                  <img class="products-item__images product-image__content" src="images/products/product-7.png"
+                    alt="wooden radio">
+                  <div class="products-item__link-box">
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--cart" href="#">
+                      <svg width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="products-item__title">Wooden radio</h4>
+                <span class="products-item__price">$29.00</span>
+              </div>
+              <div class="products-item mix category-d">
+                <div class="products-item__img-box products-item__img">
+                  <img class="products-item__images product-image__content" src="images/products/product-8.png"
+                    alt="wooden radio">
+                  <div class="products-item__link-box">
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--cart" href="#">
+                      <svg width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="products-item__title">Wooden radio</h4>
+                <span class="products-item__price">$29.00</span>
+              </div>
+              <div class="products-item mix category-d">
+                <div class="products-item__img-box">
+                  <img class="products-item__images product-image__content" src="images/products/product-9.png"
+                    alt="wooden radio">
+                  <div class="products-item__link-box">
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--cart" href="#">
+                      <svg width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="products-item__title">Wooden radio</h4>
+                <span class="products-item__price">$29.00</span>
+              </div>
+              <div class="products-item mix category-d">
+                <div class="products-item__img-box">
+                  <img class="products-item__images product-image__content" src="images/products/product-10.png"
+                    alt="wooden radio">
+                  <div class="products-item__link-box">
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--cart" href="#">
+                      <svg width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="products-item__title">Wooden radio</h4>
+                <span class="products-item__price">$29.00</span>
+              </div>
+              <div class="products-item mix category-d">
+                <div class="products-item__img-box">
+                  <img class="products-item__images product-image__content" src="images/products/product-11.png"
+                    alt="wooden radio">
+                  <div class="products-item__link-box">
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="20px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--cart" href="#">
+                      <svg width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="products-item__link products-item__link--color" href="#">
+                      <svg width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="products-item__title">Wooden radio</h4>
+                <span class="products-item__price">$29.00</span>
+              </div>
+            </div>
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--active" href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">Next</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="partners-info">
+        <ul class="partners-items container-box">
+          <li class="partners-item">
+            <img src="images/partners/1.png" alt="partner logo">
+          </li>
+          <li class="partners-item">
+            <img src="images/partners/2.png" alt="partner logo">
+          </li>
+          <li class="partners-item">
+            <img src="images/partners/3.png" alt="partner logo">
+          </li>
+          <li class="partners-item">
+            <img src="images/partners/4.png" alt="partner logo">
+          </li>
+          <li class="partners-item">
+            <img src="images/partners/5.png" alt="partner logo">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container container-box">
+      <div class="footer-top">
+        <div class="footer-top__item footer-top__contact">
+          <a class="logo footer-top__logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+          </a>
+          <a class="footer-top__addres" href="#">
+            ADDRESS: 4772 Wines Lane
+            Houston, TX 77032
+          </a>
+          <a class="footer-top__phone" href="tel:+8323475843">TELEPHONE: +832-347-5843</a>
+          <a class="footer-top__email" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
+        </div>
+        <div class="footer-top__item footer-top__services">
+          <h6 class="footer-top__title">Services
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                About us
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Return Policy
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Our Blog
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Contact Us
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Terms & Condition
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__account">
+          <h6 class="footer-top__title">Account
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Your Account
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Checkout
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Login
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Register
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__form">
+          <h6 class="footer-top__title">Newsletter
+          </h6>
+          <p class="footer-top__text">
+            Subscribe by our newsletter and get
+            update protidin.
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__form-input" placeholder="Email address" type="email" required>
+            <button class="footer-top__form-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">
+          ©2020 CopyRight Example. All rights reserved.
+        </p>
+        <div class="footer-bottom__menu">
+          <ul class="footer-bottom__menu-list">
+            <li class="footer-bottom__menu-item">
+              <a class="footer-bottom__menu-link footer-bottom__line" href="#">
+                Home
+              </a>
+            </li>
+            <li class="footer-bottom__menu-item">
+              <a class="footer-bottom__menu-link footer-bottom__line" href="#">
+                About
+              </a>
+            </li>
+            <li class="footer-bottom__menu-item">
+              <a class="footer-bottom__menu-link footer-bottom__line" href="#">
+                Blog
+              </a>
+            </li>
+            <li class="footer-bottom__menu-item">
+              <a class="footer-bottom__menu-link" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
